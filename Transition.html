@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Transition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+            /* overflow-x: hidden; */
+            
+        }
+        .list li{
+            display: inline-block;
+           
+        }
+        .list{
+            margin-left: 500px;
+        }
+        li{
+            padding-left: 50px;
+        }
+        .section1 div{
+          display: inline-block;
+        }
+      
+        i{
+          padding-left: 50px; 
+            
+        }
+        .section1{
+            height: 70px;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        h1{
+            font-family: 'Fasthand','Pacifico', cursive;
+            margin-left: 50px;
+        }
+
+       
+         
+        .section4 {
+            margin-top: -700px;
+            margin-left: 1050px;
+         }
+       .a1{
+        margin-top: -500px;
+        font-size: 80px;
+        color: white;
+        font-family:  'Fasthand','Pacifico', cursive;
+        margin-bottom: -70px;
+        margin-left: 150PX;
+       }
+       .a2{
+        font-size: 150px;
+        color: white;
+        font-family:  'Fasthand','Pacifico', cursive;
+        margin-left: 150PX;
+       }
+       .section6{
+        margin-left: 50px;
+        font-family:  'Fasthand','Pacifico', cursive;
+        font-size: 20px;
+        margin-left: 160PX;
+        color: white;
+       }
+       .a4{
+        font-size: 40px;
+        font-family: 'Fasthand','Pacifico', cursive ;
+        margin-top: 370px;
+        margin-left: 150px;
+       }
+       
+       .a5{
+        font-size: 20px;
+        margin-left: 150px;
+       }
+       .a6{
+    
+        font-family:'Fasthand','Pacifico', cursive ;
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 150px;
+       }
+       .section8{
+    
+        height: 350px;
+        width: 500px;
+        float: right;
+        margin-top: -260px;
+        margin-right: 200px;
+       }
+       .a7{
+        
+        font-family:'Fasthand','Pacifico', cursive ;
+        font-size: 40px;
+      text-align: center;
+      margin-top: 150px;
+       }
+       .a8{
+        font-size: 20px;
+    
+       }
+       .section9{
+        text-align: center;
+       }
+       .box1{
+        border: 2px solid black;
+        height: 330px;
+        width:25%;
+        margin:50px ;
+       }
+       .box2{
+        border: 2px solid black;
+        height: 330px;
+        width:25%;
+        margin:50px ;
+       }
+       .box3{
+        border: 2px solid black;
+        height: 330px;
+        width:25%;
+        margin:50px ;
+       }
+       
+       .section10{
+        display: flex;
+        padding-left: 80px;
+        }
+        .s1{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 900;
+            font-size: 18px;
+            
+        }
+        .s2{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5px;
+         
+        }
+        .a9{
+            text-align: center;
+            margin-top:5px ;
+        }
+        .f1{
+            height:92px;
+            margin-top:25px;
+            color: white;
+        }
+       
+        .s3{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 900;
+            font-size: 18px;
+            
+        }
+        .s4{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5px;
+         
+        }
+        .a10{
+            text-align: center;
+            margin-top:5px ;
+        }
+        .f2{
+            height:92px;
+            margin-top:65px;
+            color: white;
+        }
+       
+        .s5{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 900;
+            font-size: 18px;
+            
+        }
+        .s6{
+            text-align: center;
+            font-size: 25px;
+            margin-top: 5px;
+         
+        }
+        .a11{
+            text-align: center;
+            margin-top:5px ;
+        }
+        .f3{
+            height:92px;
+            margin-top:-12px;
+            color: white;
+        }
+        .box1 img{
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+        .box2 img{
+            margin-left: 40px;
+            margin-top: 10px;
+        padding-top: 30px;
+            
+        }
+        .box3 img{
+            margin-left: 60px;
+            margin-top: 10px;
+        }
+      .f1:hover{
+       background-color:rgb(96, 9, 9);
+     }
+      .f2:hover{
+       background-color:rgb(96, 9, 9);
+      }
+      .f3:hover{
+       background-color:rgb(96, 9, 9);
+       
+      }
+      .fa-arrow-left{
+        border: 2px solid white ;
+        background-color: whitesmoke;
+        height: 10px;
+        width: 10px;
+        padding: 20px;
+      }
+      .fa-arrow-right{
+        border: 2px solid white;
+        background-color: whitesmoke;
+        height: 10px;
+        width: 10px;
+        padding: 20px;
+      }
+      .section11{
+        text-align: center;
+      }
+      .fa-arrow-left:hover{
+        background-color:rgb(96, 9, 9) ;
+      }
+      .fa-arrow-right:hover{
+        background-color:rgb(96, 9, 9) ;
+      }
+      .a12{
+        font-size: 40px;
+        text-align: center;
+        font-family:'Fasthand','Pacifico', cursive ;
+        margin-top: 30px;
+      }
+      .a13{
+        font-size: 30px;
+        text-align: center;
+        font-family:'Fasthand','Pacifico', cursive ;
+        margin-top:-5px;
+      }
+      .a14{
+        font-size: 30px;
+        text-align: center;
+        font-family:'Fasthand','Pacifico', cursive ;
+        margin-top: -5px;
+      }
+      .button1{
+       margin-left:550px;
+        background-color: rgb(96, 9, 9);
+        color: white;
+        padding: 10px;
+        width: 130px;
+        margin-top: 10px;
+      }
+      .section12{
+        border: 1px solid black;
+        width: 1200px;
+        height: 500px;
+        margin-left: 150px;
+        margin-top: 90px;
+      }
+      .section13{
+        margin-left: 500px;
+        margin-top:-210px;
+      }
+      .a15{
+        font-family:'Fasthand','Pacifico', cursive ;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 23px;
+      }
+      .section14 img{
+        width:70px ;
+      }
+      .section15 img{
+        margin-top:90px;
+        padding-left: 290px;
+        height: 550px;
+      }
+      .section16 img{
+        height:890px;
+        width: 600px;
+        float: right;
+        margin-top: -450px;
+      }
+      .box4{
+        background-color: whitesmoke;
+        height: 200px;
+        width: 170px;
+        margin-left: 750px;
+        margin-top: -300px;
+      }
+      .section17{
+        height: 80px;
+        width: 80px;
+        float: right;
+        margin-top: -265px;
+      }
+      .a16{
+        font-size: 45px;
+        font-family:'Fasthand','Pacifico', cursive ;
+       float: right;
+       margin-top: -380px;
+       margin-right:-350px;
+       color: white;
+      }
+      .a17{
+        font-size: 25px;
+        
+        float: right;
+        margin-top: -230px;
+        margin-right: -300px;
+        color: white;
+      }
+      .a18{
+        font-size: 20px;
+        float: right;
+        margin-top: -180px;
+        margin-right: -440px;
+        color: white;
+      }
+      .section18 i{
+        float: right;
+        margin-right: -600px;
+        margin-top: -100px;
+        color:  rgb(96, 9, 9);
+      }
+      .section19 i{
+        float: right;
+        margin-right: -600px;
+        margin-top: -40px;
+        color:  rgb(96, 9, 9);
+      }
+      .section20{
+         font-family: 'Fasthand','Pacifico', cursive ;
+         font-size: 40px;
+         margin-top: 450px;
+         margin-left: 210px;
+      }
+    .d1{
+      padding: 15px;
+      padding-right: 230px;
+      margin: 15px;
+      font-size: 15px;
+      
+    }
+     input[type=Number]{
+      padding: 15px;
+      padding-right: 230px;
+      margin: 15px;
+      font-size: 15px;
+     }
+    .d2{
+      padding: 15px;
+      padding-right: 230px;
+      margin: 15px;
+      font-size: 15px;
+     }
+     .d3{
+      padding: 15px;
+      padding-right: 230px;
+      padding-bottom: 80px;
+      margin: 15px;
+      font-size: 15px;
+
+     }
+     .section21{
+      margin-left: 200px;
+     }
+     .button2{
+      padding: 15px;
+      padding-right: 50px;
+      margin: 20px;
+      background-color: rgb(96, 9, 9) ;
+      color: white;
+      
+     }
+     .button2:hover{
+      background-color: white;
+      color:rgb(96, 9, 9) ;
+     }
+      .section22{
+        float: right;
+        margin-top: -460px;
+      }
+      .section23{
+        border: 2px solid black;
+        height: 400px;
+        width: 100%;
+        background-color: black;
+      }
+      .d4{
+       padding: 15px;
+      padding-right: 700px;
+      margin: 15px;
+      font-size: 15px;
+      margin-top: 50px;
+      }
+      .a20{
+        color: white;
+        font-size: 30px;
+        font-family: 'Fasthand','Pacifico', cursive ;
+        margin-left: 50px;
+      }
+      .a21{
+        color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .a22{
+        color: white; 
+       margin-top: 20px;
+       margin-left: 50px;
+
+      }
+      .a23{
+        color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .a24{
+        color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .a25{
+        color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .a26{
+        color: white;
+        font-size: 30px;
+        font-family: 'Fasthand','Pacifico', cursive ;
+        margin-left: 400px;
+        margin-top: -250px;
+      }
+      .b1{
+        margin-left: 380px;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: white;
+        width: 30px;
+        margin-top: 20px;
+      }
+      .a27{
+        color: white;
+        margin-left:450px;
+        padding: 20px;
+        font-size: 20px;
+        margin-top: -70px;
+      }
+      .b2{
+       margin-left: 380px;
+        padding: 20px;
+        border: 1px solid black;
+        background-color: white;
+        width: 30px;
+        margin-top: 20px;
+      }
+      .a28{
+        color: white;
+        margin-left:450px;
+        padding: 20px;
+        font-size: 20px;
+        margin-top: -70px;
+      }
+      .a29{
+        color: white;
+        margin-left:770px;
+        margin-top: -250px;
+        font-size: 40px;
+        font-family:'Fasthand','Pacifico', cursive ;
+      }
+      .a30{
+        color: white;
+        margin-left:770px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .a31{
+        color: white;
+        margin-left:1100px;
+        margin-top: -200px;
+        font-size: 40px;
+        font-family:'Fasthand','Pacifico', cursive ;
+      }
+      .a32{
+        color: white;
+        margin-left:1150px;
+        margin-top: 10px;
+        font-size: 20px;
+      }
+      .a33{
+        color: white;
+        margin-left:1150px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+
+      .a34{
+        color: white;
+        margin-left:1150px;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .a35{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+      }
+      .section25{
+        text-align: center;
+        margin-top: 150px;
+      }
+
+     
+     
+     
+    
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="heading">
+        <h1>ChocoLux </h1>
+    </div>
+       <div class="list">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>CHOCOLATES</li>
+            <li>TESTIMONIL</li>
+            <li>CONTACT US</li>
+        </ul>
+       </div>
+       <div class="icon">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-user"></i>
+       </div>
+    </div>
+
+    <div class="section3">
+        <img src="image/IMAGE CHOCOLATE.png" alt="">
+    </div>
+
+   <div class="section4">
+    <img src="image/slider-img.png" alt="">
+   </div>
+
+   <div class="section5">
+    <p class="a1">Chocolate</p>
+    <p class="a2">Yummy</p>
+
+   
+   </div>
+
+   <div class="section6">
+    
+    <p class="a3">Read More <img src="image/image2.png" alt=""></p>
+   </div>
+
+   <div class="section7">
+      <p class="a4">About Our Company</p>
+      <p class="a5">Lorem Ipsum is that it has a more-or-less normal distribution of <br> letters, as opposed to using 'Content here, content here', making it <br> look like readable English. Many desktop publishing packages and <br> web pagend web page editors now use Lorem Ipsum as their default <br> model text,</p>
+      <p class="a6">Read More <img src="image/image1.png" alt=""></p>
+    </div>
+    <div class="section8">
+      <img src="image/about-img.png" alt="">
+   </div>
+
+   <div class="section9">
+    <p class="a7">Our chocolate products</p>
+    <p class="a8">Many desktop publishing packages and web pagend web page editors now use Lorem Ipsum as their</p>
+   </div>
+
+   <div class="section10">
+    <div class="box1">
+        <img  src="image/chocolate1.png" alt="">
+        <div class="f1">
+        <h4 class="s1">Yummy CHOCOLATE</h4>
+        <h4 class="s2">$5.0</h4>
+        <p class="a9">BUY NOW</p>
+    </div>
+    </div>
+
+    <div class="box2">
+        <img src="image/chocolate2.png" alt="">
+        <div class="f2">
+            <h4 class="s3">Yummy CHOCOLATE</h4>
+            <h4 class="s4">$5.0</h4>
+            <p class="a10">BUY NOW</p>
+        </div>
+    </div>
+
+    <div class="box3">
+        <img src="image/chocolate3.png" alt="">
+        <div class="f3">
+            <h4 class="s5">Yummy CHOCOLATE</h4>
+            <h4 class="s6">$5.0</h4>
+            <p class="a11">BUY NOW</p>
+        </div>
+    </div>
+   </div>
+
+   <div class="section11">
+    <i class="fas fa-arrow-left"></i>
+    <i class="fas fa-arrow-right"></i>
+   </div>
+
+   <div class="section12">
+    <p class="a12">Offers on chocolates</p>
+    <p class="a13">Get 5% Offer</p>
+    <p class="a14">any Chocolate item</p>
+    <button class="button1">BUY NOW</button>
+   </div>
+   
+   <div class="section13">
+    <img src="image/offer-img.png" alt="">
+   </div>
+
+   <div class="section14">
+   <p class="a15">See More <img src="image/image1.png" alt=""></p>
+   </div>
+
+   <div class="section15">
+    <img src="image/client-chocolate.png" alt="">
+   </div>
+    <div class="section16"> 
+        <div class="box4">.</div>
+    <img src="image/IMAGE CHOCOLATE.png" alt="">
+   </div>
+
+   <div class="section17">
+    <img src="image/client-img.jpg" alt="">
+   </div>
+
+   <div class="section18">
+    <p class="a16">Testimonial</p>
+
+    <p class="a17">Gero Miliya</p>
+
+    <p class="a18">long established fact that a <br> reader will be distracted by the  <br>readable content of a page <br> when looking at its layout. The <br> point of using Lorem Ipsum is <br> that it haslong established fact <br> that a reader will be distracted <br> by the readable content of a  <br>page when looking at its layout. <br> The point of using Lorem Ipsum <br> is that it haslong established <br> fact that a reader will be <br> distracted by the readable <br>content of a page when looking <br> at its layout. The point of using <br> Lorem Ipsum is that it has</p>
+
+    <i  class="fas fa-arrow-right"></i>
+  </div>
+
+  <div class="section19">
+    <i class="fas fa-arrow-left"></i>
+  </div>
+  
+  <div class="section20">
+    <p class="a19">Contact Us</p>
+  </div>
+
+    <div class="section21">
+    <input class="d1" type="text" placeholder="Full Name"> <br>
+    <input type="Number" placeholder="Phone Number"> <br>
+    <input class="d2" type="Email" placeholder="Email"> <br>
+    <input class="d3" type="text" placeholder="Message"><br>
+
+    <button class="button2">SEND NOW</button>
+  </div>
+
+  <div class="section22">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3776869.4827869623!2d71.3269721!3d22.41588245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1688566495060!5m2!1sen!2sin" width="800" height="355" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <div class="section23">
+    <input class="d4" type="email" placeholder="Enter Your email">
+    <i  class="fas fa-arrow-right" style="background-color: brown; color: white;
+    margin-left: -20px; width: 25px;"></i>
+
+ 
+
+    <p class="a20">Menu</p>
+     <p class="a21">Home</p>
+     <p class="a22">About</p>
+     <p class="a23">Chocolates</p>
+     <p class="a24">Testimonial</p>
+     <p class="a25">Contact us</p>
+    
+
+     <p class="a26">Instagram</p>
+    <img class="b1" src="image/insta-img.png" >
+    <p class="a27">long established fact <br> that a reader</p>
+    <img class="b2" src="image/insta-img.png" >
+    <p class="a28">long established fact <br> that a reader</p>
+
+    <p class="a29">Company</p>
+    <p class="a30">when looking at its layout. The <br> point of using Lorem Ipsum is <br> that it has a more-or-less <br> normal distribution of letters, as <br> opposed to</p>
+    
+    <p class="a31">Contact Us</p>
+    
+    <p class="a32">Location</p>
+    <p class="a33"> Call +01 1234567890</p>
+    <p class="a34">mail@domain.com</p>
+   
+  </div>
+
+  <div class="section24">
+    <p class="a35">© 2023 All Rights Reserved. By HTML Design</p>
+  </div>
+
+  <div class="section25">
+    <img src="image/image3.jpg" alt="">
+  </div>
+
+
+
+  
+
+   
+</body>
+</html>
